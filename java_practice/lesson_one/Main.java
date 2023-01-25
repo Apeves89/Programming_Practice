@@ -68,9 +68,13 @@ public class Main {
         // }
 
         // Print.ln("Hello World");
-        Fun.printAdd(2,3);
-        Fun.printAdd(6, 6);
-        Print.ln(Integer.toString(Fun.add(6,6)));
+        // Fun.printAdd(2,3);
+        // Fun.printAdd(6, 6);
+        // Print.ln(Integer.toString(Fun.add(6,6)));
+
+        var Sparky = new SmallDog("Sparky",5);
+        Print.ln(Sparky.name);
+        Sparky.bark();
     }
 }
 class Print{
@@ -87,5 +91,30 @@ class Fun{
 
     public static int add (int x, int y){
         return(x+y);
+    }
+}
+
+class Dog{
+    String name;
+    int age;
+    public Dog(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+
+    public void bark(){
+        Print.ln("bark");
+    }
+
+}
+
+class SmallDog extends Dog{
+    public SmallDog(String name, int age) {
+        super(name, age);
+        //TODO Auto-generated constructor stub
+    }
+
+    public void bark(){
+        Print.ln("yip yap");
     }
 }
