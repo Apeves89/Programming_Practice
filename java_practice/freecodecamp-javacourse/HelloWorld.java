@@ -37,8 +37,8 @@
 //     }
 // }
 
-class HelloWorld{
-    public static void main(String[] args) {
+// class HelloWorld{
+//     public static void main(String[] args) {
         // int number1 = 12;
         // int number2 = 6;
         //ADDITION
@@ -86,11 +86,53 @@ class HelloWorld{
         // boolean isStudent = false;
         // Print.ln(!isStudent);
 
-        int score = 0;
-        int turns = 10;
+        // int score = 0;
+        // int turns = 10;
 
-        score++;
-        Print.ln(++score);
+        // score++;
+        // Print.ln(++score);
+//     }
+// }
+
+
+class HelloWorld{
+    public static void main(String[] args) {
+        // char percentSign = '%';
+        // Print.ln(percentSign);
+
+        // String name = "John Smith";
+        // String location = "New York, USA";
+        // int age = 25;
+        // String company = "Microsoft";
+
+        // //%s for string
+        // //%d for integer
+        // //%f for float
+        // //%b for boolean
+        // //%c for char
+        // String formattedString = String.format("My name is %s. I am %d years old. I am currently working for %s. Located in %s.", name,age,company,location);
+        // Print.ln(formattedString);
+        
+        // String name = "John Smith";
+        // Print.ln(name.length());
+        // Print.ln(name.isEmpty());
+        // Print.ln(name.toLowerCase());
+        // Print.ln(name.toUpperCase());
+        // Print.ln(name);
+
+        // String string1 = new String("abc");
+        // String string2 = new String("abc");
+        // String string3 = new String("ABC");
+        // Print.ln(string1 == string2);                   //false
+        // Print.ln(string1.equals(string2));              //true
+        // Print.ln(string1.equalsIgnoreCase(string3));    //true
+
+        String string = "The sky is blue.";
+        String updatedString = string.replace("blue","red");
+        Print.ln(string.replace("blue","red"));
+        Print.ln(updatedString);
+        Print.ln(string.contains("sky"));
+        Print.ln(string.contains("code"));
     }
 }
 class Print{
@@ -108,6 +150,10 @@ class Print{
     }
 
     public static void ln(int output) {
+        System.out.println(output);
+    }
+
+    public static void ln(char output) {
         System.out.println(output);
     }
 }
