@@ -5,7 +5,7 @@
 
 //         // int age;
 //         // age = 27;
-//         Print.ln("I am " + age + " years old.");
+//         System.out.println("I am " + age + " years old.");
 //     }
 // }
 
@@ -29,11 +29,11 @@
 //         char copyrightSymbol = '\u00A9';
 //         char percentSymbol = '%';
 
-//         Print.ln("This is the copyright symbol: " + copyrightSymbol);
-//         Print.ln("This is the percent symbol: " + percentSymbol);
+//         System.out.println("This is the copyright symbol: " + copyrightSymbol);
+//         System.out.println("This is the percent symbol: " + percentSymbol);
 //         int number1 = 5;
 //         double number2 = number1;
-//         Print.ln(number2);      // 5.0
+//         System.out.println(number2);      // 5.0
 //     }
 // }
 
@@ -42,55 +42,55 @@
         // int number1 = 12;
         // int number2 = 6;
         //ADDITION
-        // Print.ln(number1 + number2);
+        // System.out.println(number1 + number2);
 
         //SUBTRACTION
-        // Print.ln(number1 - number2);
+        // System.out.println(number1 - number2);
 
         //MULTIPLICATION
-        // Print.ln(number1 * number2);
+        // System.out.println(number1 * number2);
 
         //DIVISION
-        // Print.ln(number1 / number2);
+        // System.out.println(number1 / number2);
 
         //REMAINDER (MODULO/MODULUS)
-        // Print.ln(number1 % number2);
+        // System.out.println(number1 % number2);
 
         // int number1 = 12;
         // int number2 = 15;
         // // is equal to
-        // Print.ln(number1 == number2);
+        // System.out.println(number1 == number2);
         
         // // is not equal to
-        // Print.ln(number1 != number2);
+        // System.out.println(number1 != number2);
 
         // // is greater than
-        // Print.ln(number1 > number2);
+        // System.out.println(number1 > number2);
 
         // // is less than
-        // Print.ln(number1 < number2);
+        // System.out.println(number1 < number2);
 
         // // is greater than or equal to
-        // Print.ln(number1 >= number2);
+        // System.out.println(number1 >= number2);
 
         // // is less than or equal to 
-        // Print.ln(number1 <= number2);
+        // System.out.println(number1 <= number2);
 
         // int age = 40;
-        // Print.ln(age >= 18 && age <=40);
+        // System.out.println(age >= 18 && age <=40);
 
         // boolean isStudent = false;
         // boolean isLibraryMember = true;
-        // Print.ln(isStudent || isLibraryMember);
+        // System.out.println(isStudent || isLibraryMember);
 
         // boolean isStudent = false;
-        // Print.ln(!isStudent);
+        // System.out.println(!isStudent);
 
         // int score = 0;
         // int turns = 10;
 
         // score++;
-        // Print.ln(++score);
+        // System.out.println(++score);
 //     }
 // }
 
@@ -98,7 +98,7 @@
 // class HelloWorld{
 //     public static void main(String[] args) {
         // char percentSign = '%';
-        // Print.ln(percentSign);
+        // System.out.println(percentSign);
 
         // String name = "John Smith";
         // String location = "New York, USA";
@@ -111,28 +111,28 @@
         //%b for boolean
         //%c for char
         // String formattedString = String.format("My name is %s. I am %d years old. I am currently working for %s. Located in %s.", name,age,company,location);
-        // Print.ln(formattedString);
+        // System.out.println(formattedString);
         
         // String name = "John Smith";
-        // Print.ln(name.length());
-        // Print.ln(name.isEmpty());
-        // Print.ln(name.toLowerCase());
-        // Print.ln(name.toUpperCase());
-        // Print.ln(name);
+        // System.out.println(name.length());
+        // System.out.println(name.isEmpty());
+        // System.out.println(name.toLowerCase());
+        // System.out.println(name.toUpperCase());
+        // System.out.println(name);
 
         // String string1 = new String("abc");
         // String string2 = new String("abc");
         // String string3 = new String("ABC");
-        // Print.ln(string1 == string2);                   //false
-        // Print.ln(string1.equals(string2));              //true
-        // Print.ln(string1.equalsIgnoreCase(string3));    //true
+        // System.out.println(string1 == string2);                   //false
+        // System.out.println(string1.equals(string2));              //true
+        // System.out.println(string1.equalsIgnoreCase(string3));    //true
 
         // String string = "The sky is blue.";
         // String updatedString = string.replace("blue","red");
-        // Print.ln(string.replace("blue","red"));
-        // Print.ln(updatedString);
-        // Print.ln(string.contains("sky"));
-        // Print.ln(string.contains("code"));
+        // System.out.println(string.replace("blue","red"));
+        // System.out.println(updatedString);
+        // System.out.println(string.contains("sky"));
+        // System.out.println(string.contains("code"));
 //     }
 // }
 
@@ -142,10 +142,10 @@
 //     public static void main(String[] args) {
 //         Scanner scanner = new Scanner(System.in);
 
-//         // Print.print("What is your name? ");
+//         // System.out.print("What is your name? ");
 //         // String name = scanner.nextLine();
 
-//         // Print.printf("Hello %s. How old are you? ",name);
+//         // System.out.printf("Hello %s. How old are you? ",name);
 //         // // int age = scanner.nextInt();
 //         // // scanner.nextLine();              // Required after all scanner. options except scanner.nextLine() to absorb input buffer(enter key press)
 //         // //  OR
@@ -153,62 +153,62 @@
 
 //         // // double gpa = Double.parseDouble(scanner.nextLine());
 
-//         // Print.printf("%d is a great age to start programming. What language do you prefer? ", age);
+//         // System.out.printf("%d is a great age to start programming. What language do you prefer? ", age);
 //         // String language = scanner.nextLine();
 
-//         // Print.printf("%s is a very popular language. ", language);
+//         // System.out.printf("%s is a very popular language. ", language);
 
-//         Print.print("Enter the first number: ");
+//         System.out.print("Enter the first number: ");
 //         double number1 = scanner.nextDouble();
 //         scanner.nextLine();
 
-//         Print.print("Enter the second number: ");
+//         System.out.print("Enter the second number: ");
 //         double number2 = scanner.nextDouble();
 //         scanner.nextLine();
 
 //         boolean loop = true;
 //         while(loop){
-//             Print.print("What operation do you want to perform?(add, subtract, multiply, divide) ");
+//             System.out.print("What operation do you want to perform?(add, subtract, multiply, divide) ");
 //             String operation = scanner.nextLine();
 //             // if(operation.equals("add")){
-//             //     Print.printf("%f + %f = %f", number1,number2,number1 + number2);
+//             //     System.out.printf("%f + %f = %f", number1,number2,number1 + number2);
 //             //     loop = false;
 //             // } else if (operation.equals("subtract")){
-//             //     Print.printf("%f - %f = %f", number1,number2,number1 - number2);
+//             //     System.out.printf("%f - %f = %f", number1,number2,number1 - number2);
 //             //     loop = false;
 //             // } else if (operation.equals("multiply")){
-//             //     Print.printf("%f * %f = %f", number1,number2,number1 * number2);
+//             //     System.out.printf("%f * %f = %f", number1,number2,number1 * number2);
 //             //     loop = false;
 //             // } else if (operation.equals("divide")){
-//             //     Print.printf("%f / %f = %f", number1,number2,number1 / number2);
+//             //     System.out.printf("%f / %f = %f", number1,number2,number1 / number2);
 //             //     loop = false;
 //             // } else {
-//             //     Print.printf("%s is not a supported operation. ",operation);
+//             //     System.out.printf("%s is not a supported operation. ",operation);
 //             // }
 
 //             switch (operation) {
 //                 case "add":
-//                     Print.printf("%f + %f = %f", number1,number2,number1 + number2);
+//                     System.out.printf("%f + %f = %f", number1,number2,number1 + number2);
 //                     loop = false;
 //                     break;
 //                 case "subtract":
-//                     Print.printf("%f - %f = %f", number1,number2,number1 - number2);
+//                     System.out.printf("%f - %f = %f", number1,number2,number1 - number2);
 //                     loop = false;                    
 //                     break;
 //                 case "multiply":
-//                     Print.printf("%f * %f = %f", number1,number2,number1 * number2);
+//                     System.out.printf("%f * %f = %f", number1,number2,number1 * number2);
 //                     loop = false;                    
 //                     break;
 //                 case "divide":
 //                     if(number2 == 0){
-//                         Print.ln("Cannot divide by zero.");
+//                         System.out.println("Cannot divide by zero.");
 //                     }else{
-//                         Print.printf("%f / %f = %f", number1,number2,number1 / number2);
+//                         System.out.printf("%f / %f = %f", number1,number2,number1 / number2);
 //                         loop = false;
 //                     }
 //                     break;
 //                 default:
-//                     Print.printf("%s is not a supported operation. ",operation);
+//                     System.out.printf("%s is not a supported operation. ",operation);
 //                     break;
 //             }
 
@@ -236,15 +236,15 @@
 //         // int startingIndex = 1;
 //         // int endingIndex = 4;
 //         // Arrays.sort(vowels,startingIndex,endingIndex);  // will only sort u,a,o in array
-//         // Print.ln(vowels.length);
-//         // Print.ln(vowels);                   //prints  aeiou with defined Print method 
-//         // Print.ln(Arrays.toString(vowels));  // prints [a,e,i,o,u]
+//         // System.out.println(vowels.length);
+//         // System.out.println(vowels);                   //prints  aeiou with defined Print method 
+//         // System.out.println(Arrays.toString(vowels));  // prints [a,e,i,o,u]
 
 //         // char vowels[] = {'e','u','a','o','i'};
 //         // Arrays.sort(vowels);
 //         // char key = 'w';
 //         // int foundsItemIndex = Arrays.binarySearch(vowels,key);  //if char is found it will return a positive number, negative if not found in the array
-//         // Print.ln(Arrays.toString(vowels));
+//         // System.out.println(Arrays.toString(vowels));
 //         // System.out.println(foundsItemIndex);
 
 //         // char vowels[] = {'e','u','a','o','i'};
@@ -252,7 +252,7 @@
 //         // int endingIndex = 4;
 //         // Arrays.fill(vowels,'x');
 //         // Arrays.fill(vowels,startingIndex,endingIndex,'x');
-//         // Print.ln(Arrays.toString(vowels));
+//         // System.out.println(Arrays.toString(vowels));
 
 //         int numbers[] = {1,2,3,4,5};
 //         int copyOfNumbers[] = Arrays.copyOf(numbers,numbers.length);
@@ -262,10 +262,10 @@
 
 //         // Arrays.fill(numbers,0);
 
-//         Print.ln(numbers == copyOfNumbers); // false
-//         Print.ln(Arrays.equals(numbers,copyOfNumbers)); // true
-//         Print.ln(Arrays.toString(numbers));
-//         Print.ln(Arrays.toString(copyOfNumbers));
+//         System.out.println(numbers == copyOfNumbers); // false
+//         System.out.println(Arrays.equals(numbers,copyOfNumbers)); // true
+//         System.out.println(Arrays.toString(numbers));
+//         System.out.println(Arrays.toString(copyOfNumbers));
 
 //     }
 // }
@@ -279,26 +279,26 @@
 //         // for(int index = 0; index < numbers.length; index++){
 //         //     sum += numbers[index];
 //         // }
-//         // Print.ln(sum);
+//         // System.out.println(sum);
 
 //         // int number = 5;
 
 //         // //MULTIPLICATION TABLE FOR 5
 //         // for(int multiplier = 1; multiplier < 10; multiplier++){
-//         //     Print.printf("%d x %d = %d \n",number, multiplier,number * multiplier);
+//         //     System.out.printf("%d x %d = %d \n",number, multiplier,number * multiplier);
 //         // }
 
 //         // //MULTIPLICATION TABLE FOR 1-9
 //         // for(int number = 1; number <= 10; number++){
 //         //     for(int multiplier = 1; multiplier <= 10; multiplier++){
-//         //         Print.printf("%d x %d = %d \n",number,multiplier,number*multiplier);
+//         //         System.out.printf("%d x %d = %d \n",number,multiplier,number*multiplier);
 //         //     }
 //         // }
 
 //         // //PRINT ODD NUMBERS 1-50
 //         // for(int number = 1;number <= 50;number++){
 //         //     if(number % 2 == 1){
-//         //         Print.ln(number);
+//         //         System.out.println(number);
 //         //     }
 //         // }
 
@@ -309,16 +309,16 @@
 //         // for(int number : numbers){
 //         //     sum+=number;
 //         // }
-//         // Print.ln(sum);
+//         // System.out.println(sum);
 
 //         // int number = 5;
 //         // int multiplier = 1;
 //         // while(multiplier <= 10){
-//         //     Print.printf("%d X %d = %d \n", number,multiplier,number*multiplier);
+//         //     System.out.printf("%d X %d = %d \n", number,multiplier,number*multiplier);
 //         //     multiplier++;
 //         // }
 //         // do{
-//         //     Print.printf("%d X %d = %d \n", number,multiplier,number*multiplier);
+//         //     System.out.printf("%d X %d = %d \n", number,multiplier,number*multiplier);
 //         //     multiplier++;
 
 //         // } while(multiplier <= 10);
@@ -347,23 +347,55 @@
 //         // numbers.sort(Comparator.reverseOrder());     // sorts arraylist in descending order
         
 
-//         // Print.ln(numbers.toString());                // prints arraylist as string
-//         // Print.ln(numbers.get(4));                    // returns arraylist item at index specified
-//         // Print.ln(numbers.contains(Integer.valueOf(1)));  // checks if arraylist contains value specified
-//         // Print.ln(numbers.isEmpty());                 // checks if arraylist is empty
+//         // System.out.println(numbers.toString());                // prints arraylist as string
+//         // System.out.println(numbers.get(4));                    // returns arraylist item at index specified
+//         // System.out.println(numbers.contains(Integer.valueOf(1)));  // checks if arraylist contains value specified
+//         // System.out.println(numbers.isEmpty());                 // checks if arraylist is empty
 
-//         Print.ln("before: " + numbers.toString());
+//         System.out.println("before: " + numbers.toString());
 //         numbers.forEach(number -> {                     // Error: Last index is never changed because value is similar to new value of other index
 //             int index = numbers.indexOf(number);        
 //             int newnumber = number * 2;
 //             numbers.set(index, newnumber );
-//             Print.ln(index);
+//             System.out.println(index);
 //         });
-//         Print.ln("after: " + numbers.toString());
+//         System.out.println("after: " + numbers.toString());
         
 //         // numbers.set(numbers.indexOf(1),2);
 //         // numbers.set(numbers.indexOf(2),4);
-//         // Print.ln(numbers.toString());
+//         // System.out.println(numbers.toString());
+
+
+//     }
+// }
+
+// import java.util.HashMap;
+// class HelloWorld{
+//     public static void main(String[] args){
+//         HashMap<String,Integer> examScores = new HashMap<String,Integer>();
+
+//         examScores.put("Math", 75);
+//         examScores.put("Sociology",85);
+//         examScores.put("English", 95);
+
+//         // examScores.putIfAbsent("Math", 70);
+//         // examScores.replace("Math",70);
+//         // examScores.clear();
+//         // examScores.remove("Sociology");
+
+//         examScores.forEach((subject, score) -> {
+//             examScores.replace(subject,score - 10);
+//             // System.out.println(subject + " - " + score);
+//         });
+
+
+//         System.out.println(examScores.toString());
+//         // System.out.println(examScores.size());
+//         // System.out.println(examScores.get("English"));
+//         // System.out.println(examScores.getOrDefault("Religion",-1));
+//         // System.out.println(examScores.containsKey("Math"));
+//         // System.out.println(examScores.containsValue(Integer.valueOf(100)));
+//         // System.out.println(examScores.isEmpty());
 
 
 //     }
@@ -373,11 +405,6 @@ class HelloWorld{
     public static void main(String[] args){
     }
 }
-
-// class HelloWorld{
-//     public static void main(String[] args){
-//     }
-// }
 
 class Print{
     public static void ln(String output) {
