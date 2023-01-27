@@ -136,89 +136,144 @@
 //     }
 // }
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-class HelloWorld{
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+// class HelloWorld{
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
 
-        // Print.print("What is your name? ");
-        // String name = scanner.nextLine();
+//         // Print.print("What is your name? ");
+//         // String name = scanner.nextLine();
 
-        // Print.printf("Hello %s. How old are you? ",name);
-        // // int age = scanner.nextInt();
-        // // scanner.nextLine();              // Required after all scanner. options except scanner.nextLine() to absorb input buffer(enter key press)
-        // //  OR
-        // int age = Integer.parseInt(scanner.nextLine());
+//         // Print.printf("Hello %s. How old are you? ",name);
+//         // // int age = scanner.nextInt();
+//         // // scanner.nextLine();              // Required after all scanner. options except scanner.nextLine() to absorb input buffer(enter key press)
+//         // //  OR
+//         // int age = Integer.parseInt(scanner.nextLine());
 
-        // // double gpa = Double.parseDouble(scanner.nextLine());
+//         // // double gpa = Double.parseDouble(scanner.nextLine());
 
-        // Print.printf("%d is a great age to start programming. What language do you prefer? ", age);
-        // String language = scanner.nextLine();
+//         // Print.printf("%d is a great age to start programming. What language do you prefer? ", age);
+//         // String language = scanner.nextLine();
 
-        // Print.printf("%s is a very popular language. ", language);
+//         // Print.printf("%s is a very popular language. ", language);
 
-        Print.print("Enter the first number: ");
-        double number1 = scanner.nextDouble();
-        scanner.nextLine();
+//         Print.print("Enter the first number: ");
+//         double number1 = scanner.nextDouble();
+//         scanner.nextLine();
 
-        Print.print("Enter the second number: ");
-        double number2 = scanner.nextDouble();
-        scanner.nextLine();
+//         Print.print("Enter the second number: ");
+//         double number2 = scanner.nextDouble();
+//         scanner.nextLine();
 
-        boolean loop = true;
-        while(loop){
-            Print.print("What operation do you want to perform?(add, subtract, multiply, divide) ");
-            String operation = scanner.nextLine();
-            // if(operation.equals("add")){
-            //     Print.printf("%f + %f = %f", number1,number2,number1 + number2);
-            //     loop = false;
-            // } else if (operation.equals("subtract")){
-            //     Print.printf("%f - %f = %f", number1,number2,number1 - number2);
-            //     loop = false;
-            // } else if (operation.equals("multiply")){
-            //     Print.printf("%f * %f = %f", number1,number2,number1 * number2);
-            //     loop = false;
-            // } else if (operation.equals("divide")){
-            //     Print.printf("%f / %f = %f", number1,number2,number1 / number2);
-            //     loop = false;
-            // } else {
-            //     Print.printf("%s is not a supported operation. ",operation);
-            // }
+//         boolean loop = true;
+//         while(loop){
+//             Print.print("What operation do you want to perform?(add, subtract, multiply, divide) ");
+//             String operation = scanner.nextLine();
+//             // if(operation.equals("add")){
+//             //     Print.printf("%f + %f = %f", number1,number2,number1 + number2);
+//             //     loop = false;
+//             // } else if (operation.equals("subtract")){
+//             //     Print.printf("%f - %f = %f", number1,number2,number1 - number2);
+//             //     loop = false;
+//             // } else if (operation.equals("multiply")){
+//             //     Print.printf("%f * %f = %f", number1,number2,number1 * number2);
+//             //     loop = false;
+//             // } else if (operation.equals("divide")){
+//             //     Print.printf("%f / %f = %f", number1,number2,number1 / number2);
+//             //     loop = false;
+//             // } else {
+//             //     Print.printf("%s is not a supported operation. ",operation);
+//             // }
 
-            switch (operation) {
-                case "add":
-                    Print.printf("%f + %f = %f", number1,number2,number1 + number2);
-                    loop = false;
-                    break;
-                case "subtract":
-                    Print.printf("%f - %f = %f", number1,number2,number1 - number2);
-                    loop = false;                    
-                    break;
-                case "multiply":
-                    Print.printf("%f * %f = %f", number1,number2,number1 * number2);
-                    loop = false;                    
-                    break;
-                case "divide":
-                    if(number2 == 0){
-                        Print.ln("Cannot divide by zero.");
-                    }else{
-                        Print.printf("%f / %f = %f", number1,number2,number1 / number2);
-                        loop = false;
-                    }
-                    break;
-                default:
-                    Print.printf("%s is not a supported operation. ",operation);
-                    break;
-            }
+//             switch (operation) {
+//                 case "add":
+//                     Print.printf("%f + %f = %f", number1,number2,number1 + number2);
+//                     loop = false;
+//                     break;
+//                 case "subtract":
+//                     Print.printf("%f - %f = %f", number1,number2,number1 - number2);
+//                     loop = false;                    
+//                     break;
+//                 case "multiply":
+//                     Print.printf("%f * %f = %f", number1,number2,number1 * number2);
+//                     loop = false;                    
+//                     break;
+//                 case "divide":
+//                     if(number2 == 0){
+//                         Print.ln("Cannot divide by zero.");
+//                     }else{
+//                         Print.printf("%f / %f = %f", number1,number2,number1 / number2);
+//                         loop = false;
+//                     }
+//                     break;
+//                 default:
+//                     Print.printf("%s is not a supported operation. ",operation);
+//                     break;
+//             }
 
-        }
+//         }
 
 
     
-        scanner.close();
+//         scanner.close();
+//     }
+// }
+
+// import java.util.Arrays;
+
+// class HelloWorld{
+//     public static void main(String[] args){
+//         // char vowels[] = new char[5];
+//         // vowels[0] = 'a';
+//         // vowels[1] = 'e';
+//         // vowels[2] = 'i';
+//         // vowels[3] = 'o';
+//         // vowels[4] = 'u';
+
+//         // char vowels[] = {'e','u','a','o','i'};
+//         // // vowels[2] = 'x';
+//         // int startingIndex = 1;
+//         // int endingIndex = 4;
+//         // Arrays.sort(vowels,startingIndex,endingIndex);  // will only sort u,a,o in array
+//         // Print.ln(vowels.length);
+//         // Print.ln(vowels);                   //prints  aeiou with defined Print method 
+//         // Print.ln(Arrays.toString(vowels));  // prints [a,e,i,o,u]
+
+//         // char vowels[] = {'e','u','a','o','i'};
+//         // Arrays.sort(vowels);
+//         // char key = 'w';
+//         // int foundsItemIndex = Arrays.binarySearch(vowels,key);  //if char is found it will return a positive number, negative if not found in the array
+//         // Print.ln(Arrays.toString(vowels));
+//         // System.out.println(foundsItemIndex);
+
+//         // char vowels[] = {'e','u','a','o','i'};
+//         // int startingIndex = 1;
+//         // int endingIndex = 4;
+//         // Arrays.fill(vowels,'x');
+//         // Arrays.fill(vowels,startingIndex,endingIndex,'x');
+//         // Print.ln(Arrays.toString(vowels));
+
+//         int numbers[] = {1,2,3,4,5};
+//         int copyOfNumbers[] = Arrays.copyOf(numbers,numbers.length);
+//         // int copyOfNumbers[] = Arrays.copyOfRange(numbers,1,4);      // [2,3,4]
+//         // int copyOfNumbers[] = Arrays.copyOfRange(numbers,1,10);      // [2,3,4,5,0,0,0,0,0]
+
+
+//         // Arrays.fill(numbers,0);
+
+//         Print.ln(numbers == copyOfNumbers); // false
+//         Print.ln(Arrays.equals(numbers,copyOfNumbers)); // true
+//         Print.ln(Arrays.toString(numbers));
+//         Print.ln(Arrays.toString(copyOfNumbers));
+
+//     }
+// }
+
+class HelloWorld{
+    public static void main(String[] args){
     }
-}
+// }
 
 // class HelloWorld{
 //     public static void main(String[] args){
@@ -231,9 +286,13 @@ class Print{
         
     }
 
-    public static void ln(Scanner output) {
+    public static void ln(char[] output) {
         System.out.println(output);
     }
+
+    // public static void ln(Scanner output) {
+    //     System.out.println(output);
+    // }
 
     public static void ln(boolean output) {
         System.out.println(output);
