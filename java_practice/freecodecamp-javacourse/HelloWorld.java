@@ -95,8 +95,8 @@
 // }
 
 
-class HelloWorld{
-    public static void main(String[] args) {
+// class HelloWorld{
+//     public static void main(String[] args) {
         // char percentSign = '%';
         // Print.ln(percentSign);
 
@@ -105,11 +105,11 @@ class HelloWorld{
         // int age = 25;
         // String company = "Microsoft";
 
-        // //%s for string
-        // //%d for integer
-        // //%f for float
-        // //%b for boolean
-        // //%c for char
+        //%s for string
+        //%d for integer
+        //%f for float
+        //%b for boolean
+        //%c for char
         // String formattedString = String.format("My name is %s. I am %d years old. I am currently working for %s. Located in %s.", name,age,company,location);
         // Print.ln(formattedString);
         
@@ -127,18 +127,112 @@ class HelloWorld{
         // Print.ln(string1.equals(string2));              //true
         // Print.ln(string1.equalsIgnoreCase(string3));    //true
 
-        String string = "The sky is blue.";
-        String updatedString = string.replace("blue","red");
-        Print.ln(string.replace("blue","red"));
-        Print.ln(updatedString);
-        Print.ln(string.contains("sky"));
-        Print.ln(string.contains("code"));
+        // String string = "The sky is blue.";
+        // String updatedString = string.replace("blue","red");
+        // Print.ln(string.replace("blue","red"));
+        // Print.ln(updatedString);
+        // Print.ln(string.contains("sky"));
+        // Print.ln(string.contains("code"));
+//     }
+// }
+
+import java.util.Scanner;
+
+class HelloWorld{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Print.print("What is your name? ");
+        // String name = scanner.nextLine();
+
+        // Print.printf("Hello %s. How old are you? ",name);
+        // // int age = scanner.nextInt();
+        // // scanner.nextLine();              // Required after all scanner. options except scanner.nextLine() to absorb input buffer(enter key press)
+        // //  OR
+        // int age = Integer.parseInt(scanner.nextLine());
+
+        // // double gpa = Double.parseDouble(scanner.nextLine());
+
+        // Print.printf("%d is a great age to start programming. What language do you prefer? ", age);
+        // String language = scanner.nextLine();
+
+        // Print.printf("%s is a very popular language. ", language);
+
+        Print.print("Enter the first number: ");
+        double number1 = scanner.nextDouble();
+        scanner.nextLine();
+
+        Print.print("Enter the second number: ");
+        double number2 = scanner.nextDouble();
+        scanner.nextLine();
+
+        boolean loop = true;
+        while(loop){
+            Print.print("What operation do you want to perform?(add, subtract, multiply, divide) ");
+            String operation = scanner.nextLine();
+            // if(operation.equals("add")){
+            //     Print.printf("%f + %f = %f", number1,number2,number1 + number2);
+            //     loop = false;
+            // } else if (operation.equals("subtract")){
+            //     Print.printf("%f - %f = %f", number1,number2,number1 - number2);
+            //     loop = false;
+            // } else if (operation.equals("multiply")){
+            //     Print.printf("%f * %f = %f", number1,number2,number1 * number2);
+            //     loop = false;
+            // } else if (operation.equals("divide")){
+            //     Print.printf("%f / %f = %f", number1,number2,number1 / number2);
+            //     loop = false;
+            // } else {
+            //     Print.printf("%s is not a supported operation. ",operation);
+            // }
+
+            switch (operation) {
+                case "add":
+                    Print.printf("%f + %f = %f", number1,number2,number1 + number2);
+                    loop = false;
+                    break;
+                case "subtract":
+                    Print.printf("%f - %f = %f", number1,number2,number1 - number2);
+                    loop = false;                    
+                    break;
+                case "multiply":
+                    Print.printf("%f * %f = %f", number1,number2,number1 * number2);
+                    loop = false;                    
+                    break;
+                case "divide":
+                    if(number2 == 0){
+                        Print.ln("Cannot divide by zero.");
+                    }else{
+                        Print.printf("%f / %f = %f", number1,number2,number1 / number2);
+                        loop = false;
+                    }
+                    break;
+                default:
+                    Print.printf("%s is not a supported operation. ",operation);
+                    break;
+            }
+
+        }
+
+
+    
+        scanner.close();
     }
 }
+
+// class HelloWorld{
+//     public static void main(String[] args){
+//     }
+// }
+
 class Print{
     public static void ln(String output) {
         System.out.println(output);
         
+    }
+
+    public static void ln(Scanner output) {
+        System.out.println(output);
     }
 
     public static void ln(boolean output) {
@@ -155,5 +249,11 @@ class Print{
 
     public static void ln(char output) {
         System.out.println(output);
+    }
+    public static void print(String output){    // print() will keep the cursor on the same line
+        System.out.print(output);
+    }
+    public static void printf(String output, Object... args){
+        System.out.printf(output,args);
     }
 }
