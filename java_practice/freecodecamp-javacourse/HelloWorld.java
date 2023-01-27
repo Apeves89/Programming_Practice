@@ -325,6 +325,50 @@
 //     }
 // }
 
+// import java.util.ArrayList;
+// import java.util.Comparator;;
+// class HelloWorld{
+//     public static void main(String[] args){
+//         //int double float boolean
+//         //Integer Double Float Boolean
+//         ArrayList<Integer> numbers = new ArrayList<Integer>();
+
+//         numbers.add(5);
+//         numbers.add(3);
+//         numbers.add(1);
+//         numbers.add(4);
+//         numbers.add(2);
+
+//         // numbers.remove(2);                           // remove arraylist item by index number
+//         // numbers.remove(Integer.valueOf(4));          // remove arraylist item by value
+//         // numbers.clear();                             // removes all arraylist items
+//         // numbers.set(2, Integer.valueOf(30));         // update specfic arraylist item 
+//         // numbers.sort(Comparator.naturalOrder());     // sorts arraylist in ascending order
+//         // numbers.sort(Comparator.reverseOrder());     // sorts arraylist in descending order
+        
+
+//         // Print.ln(numbers.toString());                // prints arraylist as string
+//         // Print.ln(numbers.get(4));                    // returns arraylist item at index specified
+//         // Print.ln(numbers.contains(Integer.valueOf(1)));  // checks if arraylist contains value specified
+//         // Print.ln(numbers.isEmpty());                 // checks if arraylist is empty
+
+//         Print.ln("before: " + numbers.toString());
+//         numbers.forEach(number -> {                     // Error: Last index is never changed because value is similar to new value of other index
+//             int index = numbers.indexOf(number);        
+//             int newnumber = number * 2;
+//             numbers.set(index, newnumber );
+//             Print.ln(index);
+//         });
+//         Print.ln("after: " + numbers.toString());
+        
+//         // numbers.set(numbers.indexOf(1),2);
+//         // numbers.set(numbers.indexOf(2),4);
+//         // Print.ln(numbers.toString());
+
+
+//     }
+// }
+
 class HelloWorld{
     public static void main(String[] args){
     }
