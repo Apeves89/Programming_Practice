@@ -270,10 +270,65 @@
 //     }
 // }
 
+// class HelloWorld{
+//     public static void main(String[] args){
+//         // int numbers[] = {1,2,3,4,5,6,7,8,9,10};
+
+//         // int sum = 0;
+
+//         // for(int index = 0; index < numbers.length; index++){
+//         //     sum += numbers[index];
+//         // }
+//         // Print.ln(sum);
+
+//         // int number = 5;
+
+//         // //MULTIPLICATION TABLE FOR 5
+//         // for(int multiplier = 1; multiplier < 10; multiplier++){
+//         //     Print.printf("%d x %d = %d \n",number, multiplier,number * multiplier);
+//         // }
+
+//         // //MULTIPLICATION TABLE FOR 1-9
+//         // for(int number = 1; number <= 10; number++){
+//         //     for(int multiplier = 1; multiplier <= 10; multiplier++){
+//         //         Print.printf("%d x %d = %d \n",number,multiplier,number*multiplier);
+//         //     }
+//         // }
+
+//         // //PRINT ODD NUMBERS 1-50
+//         // for(int number = 1;number <= 50;number++){
+//         //     if(number % 2 == 1){
+//         //         Print.ln(number);
+//         //     }
+//         // }
+
+//         // int numbers[] = {1,2,3,4,5};
+
+//         // int sum = 0;
+
+//         // for(int number : numbers){
+//         //     sum+=number;
+//         // }
+//         // Print.ln(sum);
+
+//         // int number = 5;
+//         // int multiplier = 1;
+//         // while(multiplier <= 10){
+//         //     Print.printf("%d X %d = %d \n", number,multiplier,number*multiplier);
+//         //     multiplier++;
+//         // }
+//         // do{
+//         //     Print.printf("%d X %d = %d \n", number,multiplier,number*multiplier);
+//         //     multiplier++;
+
+//         // } while(multiplier <= 10);
+//     }
+// }
+
 class HelloWorld{
     public static void main(String[] args){
     }
-// }
+}
 
 // class HelloWorld{
 //     public static void main(String[] args){
