@@ -1,3 +1,4 @@
+
 // class HelloWorld{
 //     static int age =27;
 //     public static void main(String[] args) {
@@ -401,44 +402,90 @@
 //     }
 // }
 
+import java.time.LocalDate;
 class HelloWorld{
     public static void main(String[] args){
-    }
-}
+        // User youngerUser = new User();
+        // youngerUser.name = "John Smith";
+        // youngerUser.birthDay = LocalDate.parse("1995-01-31");
+        // User olderUser = new User();
+        // olderUser.name = "John Smith Sr.";
+        // olderUser.birthDay = LocalDate.parse("1975-01-15");
+        // System.out.printf("%s was born back in %s and he is now %d years old. \n", youngerUser.name, youngerUser.birthDay.toString(),youngerUser.age());
+        // System.out.printf("%s was born back in %s and he is now %d years old.", olderUser.name, olderUser.birthDay.toString(),olderUser.age());
 
-class Print{
-    public static void ln(String output) {
-        System.out.println(output);
+        // User user = new User();
+        // user.name = "John Smith";
+        // user.birthDay = LocalDate.parse("1995-01-31");
+
+        // Book book = new Book();
+        // book.title = "Carmilla";
+        // book.author = "Sheridan Le Fanu";
+
+        // Book book1 = new Book();
+        // book1.title = "Programming";
+        // book1.author = "Programmer";
+
+        // Book book = new Book("Carmilla","Sheridan Le Fanu",270);
+
+        // Book book1 = new Book("Programming","Programmer",100);
+        
+        // user.borrow(book);
+        // user.borrow(book1);
+        // System.out.printf("%s was born back in %s and he is now %d years old. \n", user.getName(), user.getBirthday(),user.age());
+        // // System.out.printf("%s has borrowed these books:\n%s ", user.getName(), user.books.toString());
+
+        // System.out.printf("%s has borrowed these books:\n%s ", user.getName(), user.borrowedBooks());
+
+        User user = new User("John Smith","1995-01-31");
+
+        Book carmilla = new Book("Carmilla","Sheridan Le Fanu",270);
+
+        Book programming = new Book("Programming","Programmer",100);
+
+        AudioBook dracula = new AudioBook("Dracula", "Bram Stoker", 30000);
+
+        Ebook jeeves = new Ebook("Carry On Jeeves", "P.G. Wodehouse", 280, "PDF");
+
+        System.out.println(jeeves.getFormat());
+
         
     }
-
-    public static void ln(char[] output) {
-        System.out.println(output);
-    }
-
-    // public static void ln(Scanner output) {
-    //     System.out.println(output);
-    // }
-
-    public static void ln(boolean output) {
-        System.out.println(output);
-    }
-
-    public static void ln(double output) {
-        System.out.println(output);
-    }
-
-    public static void ln(int output) {
-        System.out.println(output);
-    }
-
-    public static void ln(char output) {
-        System.out.println(output);
-    }
-    public static void print(String output){    // print() will keep the cursor on the same line
-        System.out.print(output);
-    }
-    public static void printf(String output, Object... args){
-        System.out.printf(output,args);
-    }
 }
+
+// class Print{
+//     public static void ln(String output) {
+//         System.out.println(output);
+        
+//     }
+
+//     public static void ln(char[] output) {
+//         System.out.println(output);
+//     }
+
+//     // public static void ln(Scanner output) {
+//     //     System.out.println(output);
+//     // }
+
+//     public static void ln(boolean output) {
+//         System.out.println(output);
+//     }
+
+//     public static void ln(double output) {
+//         System.out.println(output);
+//     }
+
+//     public static void ln(int output) {
+//         System.out.println(output);
+//     }
+
+//     public static void ln(char output) {
+//         System.out.println(output);
+//     }
+//     public static void print(String output){    // print() will keep the cursor on the same line
+//         System.out.print(output);
+//     }
+//     public static void printf(String output, Object... args){
+//         System.out.printf(output,args);
+//     }
+// }
