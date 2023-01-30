@@ -132,3 +132,62 @@
 # print(dogscopy)
 # print(sorted(dogs, key=str.lower))
 # print(dogs)
+
+#TUPLES
+# tuples cannot be modified but acts as lists
+
+# names = ("Roger", "Syd","Beau")
+
+# names[0]    # "Roger"
+# names.index("Roger")    # 0
+# len(names)
+# # print("Roger" in names)
+# names[0:2]
+# print(sorted(names))
+# newTuple = names + ("Tina", "Quincy")
+# print(newTuple)
+
+#DICTIONARIES
+
+# dog = {
+#     "name":"Roger",
+#     "age": 8,
+#     'color':'green'
+# }
+
+# dog['name'] = 'Syd'
+# print(dog["name"])
+# print(dog)
+# print(dog.get('name'))
+# print(dog.get('color', 'brown'))
+# print(dog.pop('name'))
+# print(dog.popitem())
+# print('color' in dog)
+# print(list(dog.keys()))
+# print(list(dog.values()))
+# print(list(dog.items()))
+# print(len(dog))
+# dog['favorite food']= 'Meat'
+# del dog['color']
+# dogCopy = dog.copy()
+# print(dog)
+
+#SETS
+#not ordered and mutable. Can only have one of each value
+
+# set1 = {'Roger','Syd'}
+# set2 = {'Roger'}
+# intersect = set1 & set2
+# mod = set1 | set2   #union between sets
+# mod = set1 - set2      # difference between sets
+# mod = set1 > set2
+# mod = set1 < set2
+# print(intersect)        #'Roger'
+# print(mod)
+# print(list(set1))
+
+
+#FUNCTIONS
+def hello():
+    print('Hello!')
+hello()
