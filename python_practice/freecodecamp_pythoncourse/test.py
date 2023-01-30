@@ -325,7 +325,194 @@
 # http to create HTTP servers
 # urllib to manage URLs
 
-import math 
-from math import sqrt
+# import math 
+# from math import sqrt
 
-print(sqrt(4))
+# print(sqrt(4))
+
+#ACCEPTING ARGUMENTS THROUGH COMMAND LINE
+# import sys
+
+# name = sys.argv[1]
+
+# print("hello " + name)
+
+# import argparse
+# parser = argparse.ArgumentParser(
+#     description='This program prints the name of my dogs'
+# )
+
+# parser.add_argument('-c', '--color', metavar='color',
+# required=True, choices={'red','yellow'}, help='the color to search for')
+
+# args = parser.parse_args()
+
+# print(args.color)
+
+#LAMBDA FUNCTIONS
+# lambda num : num * 2
+
+# multiply = lambda a,b : a * b
+
+# print(multiply(2,4))
+
+#map(), filter(), reduce()
+# numbers = [1,2,3]
+
+# def double(a):
+#     return a * 2
+
+# double = lambda a : a * 2
+# result = map(double, numbers)
+# result = map(lambda a : a * 2, numbers)
+# print(list(result))
+
+# numbers = [1,2,3,4,5,6]
+# # def isEven(n):
+# #     return n % 2 == 0
+# # result = filter(isEven, numbers)
+# result = filter(lambda n : n % 2==0, numbers)
+# print(list(result))
+
+# from functools import reduce
+# expenses = [
+#     ('Dinner', 80),
+#     ('Car repair', 120)
+# ]
+
+# # sum = 0
+# # for expense in expenses:
+# #     sum += expense[1]
+# # print(sum)
+
+# sum = reduce(lambda a , b: a[1] + b[1],expenses)
+# print(sum)
+
+#RECURSION
+
+# 3! = 3 * 2 * 1 = 6
+# 4! = 4 * 3 * 2 * 1 = 24
+# 5! = 5 * 4 * 3 * 2 * 1 = 120
+
+# def factorial(n):
+#     if n == 1: return 1
+#     return n * factorial(n-1)
+# print(factorial(5))
+
+# #DECORATORS
+
+# def logtime(func):
+#     def wrapper():
+#         print('before')
+#         val = func()
+#         print('after')
+#         return val
+#     return wrapper
+
+# @logtime
+# def hello():
+#     print('hello')
+    
+# hello()
+
+# #DOCSTRINGS
+# """Dog module
+
+# This module does ... bla bla bla and provides the 
+# following classes:
+
+# -Dog
+# ...
+# """
+# def increment(n):
+#     """Increment a number"""
+#     return n + 1
+# class Dog:
+#     """A class representing a dog"""
+#     def __init__(self,name,age):
+#         """Initialize a new dog"""
+#         self.name = name
+#         self.age = age
+    
+#     def bark(self):
+#         """Let the dog bark"""
+#         print('WOF!')
+# print(help(Dog))
+
+
+# #Annotations
+
+# def increment(n: int) -> int:
+#     return n + 1
+# count: int = 0
+
+
+#EXCEPTIONS
+
+# try:
+#     # lines of code
+# except <ERROR1>:
+#     # handler <ERROR1>
+# except <ERROR2>:
+#     #handler <ERROR2>
+# else:
+#     # no exceptions were raised, the code ran succesfully
+# finally:
+#     # do something in any case
+
+# try:
+#     result = 2/0
+# except ZeroDivisionError:
+#     print('Cannot divide by zero!')
+# finally:
+#     result = 1
+# print(result)
+
+# raise Exception('An error')     # returns custom error
+
+# try:
+#     raise Exception('An error')
+# except Exception as error:
+#     print(error)
+
+# class DogNotFoundException(Exception):
+#     print('inside')
+#     pass
+
+# try:
+#     raise DogNotFoundException()
+# except DogNotFoundException:
+#     print('Dog not Found!')
+
+
+# #LIST COMPRESSION
+# numbers = [1,2,3,4,5]
+# numbers_power_2 = [n**2 for n in numbers]
+# print(numbers_power_2)
+
+# #OPERATION OVERLOADING
+# class Dog:
+#     def __init__(self,name,age) -> None:
+#         self.name = name
+#         self.age = age
+#     def __gt__(self,other):
+#         return True if self.age > other.age else False
+    
+# roger = Dog('Roger',8)
+# syd = Dog('Syd',9)
+
+# print(roger> syd)
+
+# # __add__() respond to the + operator
+# # __sub__() respond to the - operator
+# # __mul__() respond to the * operator
+# # __truediv__() respond to the / operator
+# # __floordiv__() respond to the // operator
+# # __mod__() respond to the % operator
+# # __pow__() respond to the ** operator
+# # __rshift__() respond to the >> operator
+# # __lshift__() respond to the << operator
+# # __and__() respond to the & operator
+# # __or__() respond to the | operator
+# # __xor__() respond to the ^ operator
+
