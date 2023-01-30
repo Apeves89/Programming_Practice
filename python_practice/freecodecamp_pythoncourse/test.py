@@ -188,6 +188,144 @@
 
 
 #FUNCTIONS
-def hello():
-    print('Hello!')
-hello()
+# def hello(name = "my friend"):
+#     print('Hello '+ name)
+# hello("Beau")
+# hello("Quincy")
+# hello()
+    
+# def hello(name,age):
+#     print('Hello '+ name + ", you are " +
+#           str(age) + " years old!")
+# hello("Beau" ,39)
+# hello("Quincy", 26)
+
+# def change(value):
+#     value['name'] = 'Syd'
+
+# val = {'name': 'beau'}
+# change(val)
+# print(val)
+
+# def hello(name):
+#     # if not name:
+#     #     return
+#     print('Hello ' + name + '!')
+#     return name, 'Beau', 8
+    
+# # hello(False)
+# print((hello('Syd')))
+
+# age = 8 
+# def test():
+#     print(age)
+# print(age)
+# test()
+
+# def talk(phrase):
+#     def say(word):
+#         print(word)
+    
+#     words = phrase.split(' ')
+#     for word in words:
+#         say(word)
+        
+# talk('I am going to buy the milk')
+
+# def count():
+#     count = 0
+#     def increment():
+#         nonlocal count
+#         count = count + 1
+#         print(count)
+#     increment()
+    
+# count()   #1
+# count()   #1
+
+# def counter():
+#     count = 0
+#     def increment():
+#         nonlocal count
+#         count = count + 1
+#         return count
+#     return increment
+# increment = counter()
+
+# print(increment())  #1
+# print(increment())  #2
+# print(increment())  #3
+
+#OBJECTS
+
+# age = 8
+# print(age.real)
+# print(age.imag)
+# print(age.bit_length())
+
+# items = [1,2]
+# items.append(3)
+# items.pop()
+# print(id(items))
+
+#LOOPS
+# items = [1,2,3,4]
+# for index,item in enumerate(items):     #enumerate() creates index in for loop
+#     print(item, index)
+
+# items = [1,2,3,4]
+# for item in items:
+#     if item ==2:
+#         # continue            #continue stops iteration at that point and go to next iteration
+#         break           # break  stops the loop 
+#     print(item)
+
+#CLASSES
+# class Animal:
+#     def walk(self):
+#         print('Walking...')
+
+# class Dog(Animal):
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
+    
+#     def bark(self):
+#         print('woof!')
+        
+# roger = Dog('Roger', 8)
+
+# print(roger.name)
+# print(roger.age)
+# roger.bark()
+# roger.walk()
+
+#MODULES
+# import Dog
+# Dog.bark()  #import file
+
+# from Dog import bark    #import function from another file
+# bark()
+
+# from lib import Dog   #created lib directory to store files and import
+# Dog.bark()
+
+# from lib.Dog import bark
+# bark()
+
+# math for math utilities
+# re for regular expressions
+# json to work with JSON
+# datetime to work with dates
+# sqlite3 to use SQLite
+# os for Operating System utilities
+# random for random number generation
+# statistics for statistics utilities
+# requests to perform HTTP network requests
+# http to create HTTP servers
+# urllib to manage URLs
+
+import math 
+from math import sqrt
+
+print(sqrt(4))
