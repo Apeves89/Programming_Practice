@@ -6,6 +6,32 @@ import (
 
 var print = fmt.Println
 
+type person struct {
+	Name string
+	Age  int
+}
+
+type alien struct {
+	Name   string
+	Age    int
+	Planet string
+}
+
+type sentient interface {
+	SayMyName()
+}
+
+func (p person) SayMyName() {
+	print("Hello, my name is " + p.Name)
+}
+func (a alien) SayMyName() {
+	print("Hello, my name is " + a.Name)
+}
+
+func stats(s interface{}) {
+	print(s)
+}
+
 func main() {
 	// fmt.Println("Hello World")
 	// var myName string
@@ -70,4 +96,22 @@ func main() {
 	// mySlice[2] = 7 // mySlice is a pointer to myArr
 	// print(mySlice)
 	// print(myArr)
+
+	// myMap := map[string]int{
+	// 	"AlexAge": 34,
+	// 	"BobsAge": 55,
+	// }
+	//print(myMap["AlexAge"])
+
+	// persons := []person{{Name: "Alex", Age: 34}, {Name: "Bob", Age: 55}}
+	// print(persons[0])
+	// persons[1].SayMyName()
+
+	Alex := person{Name: "Alex Merced", Age: 34}
+	Zim := alien{Name: "Zim", Age: 5000, Planet: "Jupiter"}
+
+	Alex.SayMyName()
+	Zim.SayMyName()
+	stats(Alex)
+	stats(Zim)
 }
